@@ -48,6 +48,7 @@ ul {
     align-items: flex-start;
     z-index: 1000;
     mix-blend-mode: difference;
+    pointer-events: none;
 }
 
 /* Logo removed */
@@ -74,6 +75,11 @@ ul {
 
 .site-nav a:hover {
     color: var(--accent-color);
+}
+
+.site-nav a,
+.hamburger-menu {
+    pointer-events: auto;
 }
 
 /* Mobile media query removed as styles are now universal */
